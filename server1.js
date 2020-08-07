@@ -48,7 +48,8 @@ var obi = {
 // Routes
 // ===========================================================
 app.get("/", function(req, res) {
-  res.send("Welcome to the Star Wars Page!");
+  // res.send("Welcome to the Star Wars Page!");
+  res.sendFile(path.join(__dirname, 'index.html'))
 });
 
 app.get("/yoda", function(req, res) {
